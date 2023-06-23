@@ -11,6 +11,6 @@ const box = document.getElementById("output");
 
 let x = delayedGreeting();
 x.then((data) => {
-	box.innerText = "\'"+ data +"\'"
+	box.innerText =  data 
 })
 // +'Hello, world!'
