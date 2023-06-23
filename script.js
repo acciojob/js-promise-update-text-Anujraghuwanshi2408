@@ -3,7 +3,7 @@ function delayedGreeting(){
 	return new Promise((resolve) => {
 		setTimeout(() =>{
 		  resolve('Hello, world!')
-		} , 10000)
+		} , 1000)
 	})
 }
 
@@ -11,6 +11,6 @@ const box = document.getElementById("output");
 
 let x = delayedGreeting();
 x.then((data) => {
-	box.innerText = "\'"+ data +"\'"
+	box.innerContext = "\'"+ data +"\'"
 })
 // +'Hello, world!'
