@@ -1,1 +1,14 @@
 //your JS code here. If required.
+function delayedGreeting(){
+	return new Promise((resolve) => {
+		setTimeout(() =>{
+		  resolve("Hello, world!")
+		} , 10000)
+	})
+}
+
+const box = document.getElementById("output");
+
+delayedGreeting().then((data) => {
+	box.innerText = data;
+})
